@@ -13,7 +13,7 @@ function Navbar() {
   }
 
   return (
-    <nav className='bg-stone-960 p-4 border-b-[1px] border-black'>
+    <nav className='bg-stone-960 px-10 py-4 border-b-[1px] border-black'>
       <div className='container mx-auto flex justify-between items-center'>
         <motion.div whileHover={{ scaleX: 1.02 }} whileTap={{ scale: 0.98 }}>
           <Link href='/'>
@@ -22,8 +22,8 @@ function Navbar() {
         </motion.div>
 
         <div className='hidden md:flex items-center text-lg gap-12'>
-          <a href='/about' className='text-white hover:text-gray-600'>About</a>
-          <a href='/dashboard' className='text-white hover:text-gray-500'>Portfolio</a>
+          <a href='/' className='text-white hover:text-gray-600'>Home</a>
+          <a href='/projects' className='text-white hover:text-gray-500'>Projects</a>
           <a href='/contact' className='text-white hover:text-gray-500'>Contact</a>
         </div>
 
