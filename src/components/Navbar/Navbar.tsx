@@ -13,7 +13,7 @@ function Navbar() {
   }
 
   return (
-    <nav className='bg-stone-960 px-10 py-4 border-b-[1px] border-black'>
+    <nav className='bg-transparent backdrop-blur-sm px-10 py-3 border-b-[1px] border-gray-900 fixed z-50 min-w-full'>
       <div className='container mx-auto flex justify-between items-center'>
         <motion.div whileHover={{ scaleX: 1.02 }} whileTap={{ scale: 0.98 }}>
           <Link href='/'>
@@ -22,22 +22,24 @@ function Navbar() {
         </motion.div>
 
         <div className='hidden md:flex items-center text-lg gap-12'>
-          <a href='/' className='text-white hover:text-gray-600'>Home</a>
-          <a href='/projects' className='text-white hover:text-gray-500'>Projects</a>
-          <a href='/contact' className='text-white hover:text-gray-500'>Contact</a>
+          <Link href='#home' className='text-white hover:text-gray-600'>Home</Link>
+          <Link href='#skills' className='text-white hover:text-gray-500'>Skills</Link>
+          <Link href='#projects' className='text-white hover:text-gray-500'>Projects</Link>
         </div>
 
         <div className='hidden md:flex items-center gap-4'>
+          <Link href="#contact">
             <button className="px-6 py-3 bg-transparent border-2 border-orange-600 text-white hover:bg-orange-700 hover:text-white transition-colors rounded-md">
             Contact Me
             </button>
+          </Link>
         </div>
 
 
         <div className='md:hidden flex items-center space-x-4'>
   
           <button onClick={toggleMenu} className='text-white focus:outline-none'>
-            {isOpen ? <X className='h-6 w-6' /> : <Menu className='h-6 w-6' />}
+            {isOpen ? <X className='h-5 w-5' /> : <Menu className='h-5 w-5' />}
           </button>
         </div>
       </div>
@@ -56,9 +58,10 @@ function Navbar() {
           </button>
 
           {/* Mobile Menu Links */}
-          <a href='/about' className='text-gray-600 text-lg font-semibold hover:text-white'>About</a>
-          <a href='/dashboard' className='text-gray-600 text-lg font-semibold hover:text-white'>Dashboard</a>
-          <a href='/contact' className='text-gray-600 text-lg font-semibold hover:text-white'>Contact</a>
+  
+          <Link href='#home' className='text-gray-600 text-lg font-semibold hover:text-white'>Home</Link>
+          <Link href='#projects' className='text-gray-600 text-lg font-semibold hover:text-white'>Projects</Link>
+          <Link href='#skills' className='text-gray-600 text-lg font-semibold hover:text-white>Contact'>Skills</Link>
 
         </motion.div>
       )}

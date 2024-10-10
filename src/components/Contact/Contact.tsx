@@ -2,7 +2,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaNetworkWired } from
 
 const Contact = () => {
   return (
-    <div className="relative bg-stone-950 text-white py-12 px-6">
+    <div className="relative bg-stone-950 text-white py-12 px-6" id="contact">
       {/* Contact Info */}
       <h2 className="text-3xl font-semibold text-center mb-8">Contact Me</h2>
       <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12 items-center">

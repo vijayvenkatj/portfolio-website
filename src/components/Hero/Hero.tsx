@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Gojo from '../../Assets/gojo.png';
 import BgImage from '../../Assets/desktop-wallpaper-portfolio.jpg'
+import Link from 'next/link';
 import {BiSolidArrowFromTop } from 'react-icons/bi';
 
 function Hero() {
@@ -26,9 +27,11 @@ function Hero() {
             I&apos;M <span className="text-orange-600">Vijay J</span>
           </h1>
           <p className="text-lg lg:text-xl mb-4">Web Developer and DevOps Engineer</p>
+          <Link href="#contact">
           <button className="px-6 py-3 mt-4 bg-transparent border-2 border-orange-600 text-white hover:bg-orange-700 hover:text-white transition-colors rounded-md">
             Contact Me
           </button>
+          </Link>
         </div>
         <div className="md:w-3/5 w-full mt-8 md:mt-0 relative flex justify-center">
           <Image

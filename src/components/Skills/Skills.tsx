@@ -1,9 +1,9 @@
 import Hero from "../Hero/Hero";
-function portfolio() {
+function Skills() {
   return (
-    <div id="projects">
+    <div id="skills">
       <Hero />
     </div>
   );
 }
-export default portfolio;
+export default Skills;
