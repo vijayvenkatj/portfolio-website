@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Gojo from '../../Assets/gojo.png';
+import pfp from '../../Assets/profile-pic.png';
 import BgImage from '../../Assets/desktop-wallpaper-portfolio.jpg'
 import Link from 'next/link';
 import {BiSolidArrowFromTop } from 'react-icons/bi';
@@ -35,11 +35,11 @@ function Hero() {
         </div>
         <div className="md:w-3/5 w-full mt-8 md:mt-0 relative flex justify-center">
           <Image
-            src={Gojo}
-            alt="Gojo Satoru"
+            src={pfp}
+            alt="My pfp"
             width={500}
             height={500}
-            className="rounded-lg w-full max-w-xs md:max-w-md lg:max-w-lg"
+            className="rounded-full w-full max-w-xs md:max-w-md lg:max-w-lg"
           />
         </div>
         <BiSolidArrowFromTop className="absolute bottom-6 text-5xl text-gray-200 animate-bounce" />

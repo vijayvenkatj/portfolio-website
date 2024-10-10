@@ -22,8 +22,8 @@ function Portfolio() {
 
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-transparent z-10"></div>
 
-      <h2 className="text-5xl text-orange-600 font-bold text-center mt-14 mb-16 relative z-20 shadow-lg tracking-wide">
-        Featured Projects
+      <h2 className="text-4xl lg:text-6xl text-orange-600 font-bold text-center mt-14 mb-16 relative z-20 shadow-lg tracking-wide">
+        <span className="text-white mr-2">Featured</span>Projects
       </h2>
 
    
