@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Gojo from '../../Assets/gojo.png';
 import BgImage from '../../Assets/desktop-wallpaper-portfolio.jpg'
-import { BiArrowFromBottom, BiArrowFromTop, BiSolidArrowFromTop } from 'react-icons/bi';
+import {BiSolidArrowFromTop } from 'react-icons/bi';
 
 function Hero() {
   return (
