@@ -1,8 +1,7 @@
-import Hero from "../Hero/Hero";
+
 function Skills() {
   return (
-    <div id="skills">
-      <Hero />
+    <div className="bg-white" id="skills">
     </div>
   );
 }

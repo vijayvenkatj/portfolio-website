@@ -19,7 +19,7 @@ function Hero() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-transparent z-10"></div>
 \
       <div className="relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center justify-between max-w-screen-xl">
         <div className="md:w-2/5 w-full">
