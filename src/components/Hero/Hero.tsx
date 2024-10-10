@@ -18,14 +18,12 @@ function Hero() {
         />
       </div>
 
-      {/* Overlay to darken the background for better text readability */}
       <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
-
-      {/* Hero Content */}
+\
       <div className="relative z-10 container mx-auto px-6 flex flex-col md:flex-row items-center justify-between max-w-screen-xl">
         <div className="md:w-2/5 w-full">
           <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-            I'M <span className="text-orange-600">Vijay J</span>
+            I&apos;M <span className="text-orange-600">Vijay J</span>
           </h1>
           <p className="text-lg lg:text-xl mb-4">Web Developer and DevOps Engineer</p>
           <button className="px-6 py-3 mt-4 bg-transparent border-2 border-orange-600 text-white hover:bg-orange-700 hover:text-white transition-colors rounded-md">

@@ -13,7 +13,7 @@ function Navbar() {
   }
 
   return (
-    <nav className='bg-neutral-950 p-4 border-b-[1px] border-gray-900'>
+    <nav className='bg-stone-960 p-4 border-b-[1px] border-black'>
       <div className='container mx-auto flex justify-between items-center'>
         <motion.div whileHover={{ scaleX: 1.02 }} whileTap={{ scale: 0.98 }}>
           <Link href='/'>
