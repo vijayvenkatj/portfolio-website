@@ -8,13 +8,13 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12 items-center">
         {/* Email */}
         <div className="flex items-center space-x-3">
-          <FaEnvelope className="text-orange-500" />
+          <FaEnvelope className="text-[#FF6500]" />
           <span>contact.vijayvenkat@gmail.com</span>
         </div>
 
         {/* Location */}
         <div className="flex items-center space-x-3">
-          <FaMapMarkerAlt className="text-orange-500" />
+          <FaMapMarkerAlt className="text-[#FF6500]" />
           <span>Tamilnadu, India</span>
         </div>
       </div>
@@ -22,18 +22,18 @@ const Contact = () => {
       {/* Social Icons */}
       <div className="flex justify-center space-x-4 mt-8">
         <a href="https://in.linkedin.com/in/vijayvenkatj" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-white hover:text-orange-500 transition duration-300 cursor-pointer" />
+          <FaLinkedin className="text-white hover:text-[#FF6500] transition duration-300 cursor-pointer" />
         </a>
         <a href="https://github.com/vijayvenkatj" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-white hover:text-orange-500 transition duration-300 cursor-pointer" />
+          <FaGithub className="text-white hover:text-[#FF6500] transition duration-300 cursor-pointer" />
         </a>
         <a href="https://tryhackme.com/r/p/Vijayvenkatj" target="_blank" rel="noopener noreferrer">
-          <FaNetworkWired className="text-white hover:text-orange-500 transition duration-300 cursor-pointer" />
+          <FaNetworkWired className="text-white hover:text-[#FF6500] transition duration-300 cursor-pointer" />
         </a>
       </div>
 
       {/* Footer Text */}
-      <p className="text-center text-orange-500 mt-6 text-lg">&quot;Thanks for Scrolling&quot;</p>
+      <p className="text-center text-[#FF6500] mt-6 text-lg">&quot;Thanks for Scrolling&quot;</p>
     </div>
   );
 };

@@ -38,7 +38,7 @@ function Skills() {
   ];
 
   return (
-    <section className="relative bg-stone-950 text-gray-100 min-h-screen flex items-center justify-center overflow-hidden" id="skills">
+    <section className="relative bg-black text-gray-100 min-h-screen flex items-center justify-center overflow-hidden" id="skills">
       <div className="absolute inset-0 z-0 w-full h-full pointer-events-none">
         <Image
           src={BgImage}
@@ -50,11 +50,11 @@ function Skills() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-stone-950 via-black/80 to-black z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 to-transparent z-10"></div>
 
       <div className="relative z-10 container mx-auto px-6 flex flex-col items-center justify-center max-w-screen-xl">
         <h2 className="text-4xl lg:text-6xl font-bold mb-14">
-          My <span className="text-orange-600">Skills</span>
+          My <span className="text-[#FF6500]">Skills</span>
         </h2>
         
         <div className="grid grid-cols-3 md:grid-cols-6 gap-8 lg:gap-12">

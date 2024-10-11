@@ -3,11 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] , weight:"500"})
 
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Vijayvenkat J",
   description: "Portfolio of Vijayvenkat J",
 };
 

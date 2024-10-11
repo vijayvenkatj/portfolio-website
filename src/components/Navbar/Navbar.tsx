@@ -17,7 +17,7 @@ function Navbar() {
       <div className='container mx-auto flex justify-between items-center'>
         <motion.div whileHover={{ scaleX: 1.02 }} whileTap={{ scale: 0.98 }}>
           <Link href='/'>
-            <span className='text-xl text-orange-600 font-semibold'>Vijay Venkat J</span>
+            <span className='text-xl text-[#FF6500] font-semibold'>Rhul</span>
           </Link>
         </motion.div>
 
@@ -29,7 +29,7 @@ function Navbar() {
 
         <div className='hidden md:flex items-center gap-4'>
           <Link href="#contact">
-            <button className="px-6 py-3 bg-transparent border-2 border-orange-600 text-white hover:bg-orange-700 hover:text-white transition-colors rounded-md">
+            <button className="px-6 py-3 bg-transparent border-2 border-[#FF6500] text-white hover:bg-[#FF6500] hover:text-white transition-colors rounded-md">
             Contact Me
             </button>
           </Link>
@@ -38,7 +38,7 @@ function Navbar() {
 
         <div className='md:hidden flex items-center space-x-4'>
   
-          <button onClick={toggleMenu} className='text-white focus:outline-none'>
+          <button onClick={toggleMenu} className=' text-white focus:outline-none'>
             {isOpen ? <X className='h-5 w-5' /> : <Menu className='h-5 w-5' />}
           </button>
         </div>
@@ -50,7 +50,7 @@ function Navbar() {
           animate={{ opacity: 1, x: 0 }}  
           transition={{ ease:'easeInOut' ,duration: 0.2 }}
           exit={{ opacity: 0, x: 200 }}  
-          className='fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 flex flex-col items-center rounded-lg space-y-6 z-50'
+          className='fixed top-0 right-0 min-h-screen w-full bg-neutral-900 shadow-lg p-6 flex flex-col items-center rounded-lg space-y-6 z-50'
         >
           {/* Close Button */}
           <button onClick={toggleMenu} className='absolute top-4 right-4 text-white focus:outline-none'>
@@ -58,11 +58,10 @@ function Navbar() {
           </button>
 
           {/* Mobile Menu Links */}
-  
-          <Link href='#home' className='text-gray-600 text-lg font-semibold hover:text-white'>Home</Link>
-          <Link href='#projects' className='text-gray-600 text-lg font-semibold hover:text-white'>Projects</Link>
-          <Link href='#skills' className='text-gray-600 text-lg font-semibold hover:text-white>Contact'>Skills</Link>
-
+          <Link href='#home' className='text-gray-300 text-lg font-semibold hover:text-white'><button onClick={toggleMenu}>Home</button></Link>
+          <Link href='#skills' className='text-gray-300 text-lg font-semibold hover:text-white>Contact'><button onClick={toggleMenu}>Skills</button></Link>
+          <Link href='#projects' className='text-gray-300 text-lg font-semibold hover:text-white'><button onClick={toggleMenu}>Projects</button></Link>
+         
         </motion.div>
       )}
     </nav>
